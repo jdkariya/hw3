@@ -4,6 +4,7 @@ class PostsController < ApplicationController
         @post = Post.new
     end
 
+
     def create
         @post = Post.new
         @post["title"] = params["post"]["title"]
